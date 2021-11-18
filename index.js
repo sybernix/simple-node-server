@@ -7,8 +7,6 @@ const userModel = require("./models");
 const app = express();
 const port = 80;
 
-app.use(cors());
-
 mongoose.connect('mongodb+srv://mongouser:mongouser@cluster0.c4yrp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
@@ -25,6 +23,8 @@ db.once("open", function () {
 // Configuring body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.use(cors());
 
 app.get('/details', async (req, res) => {
     // const user = await userModel.findOne({id: 123});
