@@ -7,11 +7,7 @@ const userModel = require("./models");
 const app = express();
 const port = 80;
 
-const corsOptions = {
-    origin: 'https://mystifying-johnson-d35d1f.netlify.app',
-    credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors());
 
 mongoose.connect('mongodb+srv://mongouser:mongouser@cluster0.c4yrp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {
