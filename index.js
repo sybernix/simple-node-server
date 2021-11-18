@@ -7,7 +7,7 @@ const userModel = require("./models");
 const app = express();
 const port = 3001;
 
-app.use(cors());
+// app.use(cors());
 
 mongoose.connect('mongodb+srv://mongouser:mongouser@cluster0.c4yrp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {
