@@ -8,7 +8,7 @@ const app = express();
 const port = 3001;
 
 const corsOptions = {
-    origin: 'https://mystifying-johnson-d35d1f.netlify.app/',
+    origin: 'https://mystifying-johnson-d35d1f.netlify.app',
     credentials: true,
 };
 app.use(cors(corsOptions));
