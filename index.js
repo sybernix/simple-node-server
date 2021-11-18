@@ -26,9 +26,9 @@ db.once("open", function () {
     console.log("Connected successfully");
 });
 
-// Configuring body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// // Configuring body parser middleware
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 app.get('/details', async (req, res) => {
     // const user = await userModel.findOne({id: 123});
