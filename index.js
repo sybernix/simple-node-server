@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const userModel = require("./models");
 
 const app = express();
-const port = 3001;
+const port = 80;
 
 const corsOptions = {
     origin: 'https://mystifying-johnson-d35d1f.netlify.app',
